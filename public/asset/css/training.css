@@ -1,0 +1,42 @@
+.training-session-div {
+  padding-bottom: 50px;
+}
+
+.training-header {
+  width: 800px;
+  text-align: justify;
+}
+
+.training-header p {
+  font-size: 60px;
+}
+
+.training-header-div {
+  margin-top: 90px;
+}
+
+.video-grey {
+  background-color: grey;
+}
+
+.vid-icon-white {
+  background-color: white;
+}
+
+.buttons-div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.buttons-div a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: gray;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  line-height: 35px;
+}
+

@@ -1,0 +1,98 @@
+.main {
+  background-color: grey;
+  height: 657px;
+}
+
+.reg {
+  width: 400px;
+  border-radius: 40px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 50px;
+  left: 500px;
+  background-color: white;
+}
+
+.reg h6 {
+  text-align: center;
+}
+
+.reg h6 span {
+  color: grey;
+}
+
+.reg #signin {
+  text-align: center;
+}
+
+.auth-methods {
+  background-color: grey;
+  height: 30px;
+  text-align: center;
+}
+
+.auth-methods a {
+  color: white;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.line {
+  height: 2px;
+  background-color: grey;
+  margin-top: 10px;
+}
+
+.or {
+  text-align: center;
+  font-size: 20px;
+  color: grey;
+}
+
+input {
+  width: 100%;
+  background-color: grey;
+  border: 0;
+  color: white;
+}
+
+input::-moz-placeholder {
+  color: lightgray;
+  padding-left: 10px;
+}
+
+input:-ms-input-placeholder {
+  color: lightgray;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: lightgray;
+  padding-left: 10px;
+}
+
+label {
+  color: grey;
+}
+
+#age {
+  color: grey;
+}
+
+.submit {
+  border-radius: 50px;
+  padding: 8px;
+  background-color: grey;
+  width: 100%;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: space-between;
+}
+

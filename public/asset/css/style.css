@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  background-color: grey;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav li {
+  float: left;
+  width: 80px;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.enroll {
+  background-color: white;
+  width: 80px;
+  height: 30px;
+  margin-top: 8px;
+  border: 0;
+  color: grey;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.signin {
+  color: white;
+  text-decoration: none;
+  border: 0;
+  background-color: grey;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.footer {
+  height: 80px;
+  color: white;
+  background-color: gray;
+}
+
+.grey-line {
+  height: 4px;
+  background-color: grey;
+  margin-top: 45px;
+}
+
+.white-line {
+  height: 4px;
+  background-color: white;
+  margin-top: 45px;
+}
+
+.content {
+  width: 63%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size: large;
+}
+
+.content span {
+  font-weight: bold;
+  font-size: 20px;
+  color: grey;
+}
+
+.header {
+  width: 600px;
+  text-align: justify;
+}
+
+.header h4 {
+  font-size: 60px;
+}
+
+.header p {
+  font-size: 35px;
+}
+
+.header-grey {
+  color: grey;
+}
+
+.header-white {
+  color: white;
+}
+
+.vids {
+  height: 350px;
+  margin-top: 50px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.vids .vid-icon {
+  border-radius: 15px;
+  text-align: center;
+  height: 40px;
+  line-height: 25px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.dropdown-div {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+}
+
+.arrow-div {
+  margin-top: 12px;
+  color: white;
+}
+
+.circle-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.contact-nav {
+  width: 100px;
+}
+
