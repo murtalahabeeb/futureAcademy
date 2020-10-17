@@ -41,7 +41,8 @@ $("#login-form").on('submit',function(e){
 
         email:$("#email").val(),
         
-        password:$("#password").val()
+        password:$("#password").val(),
+        remember:$("#remember").isChecked()
 
     }).then(function(response) {
         console.log(response.StatusCode);
@@ -68,8 +69,37 @@ $("#login-form").on('submit',function(e){
 
         // console.log([0]);
         
-    })
-    
-    
-    
-})
+    });
+});
+
+$("#reg-form").on('submit',function(e){
+    e.preventDefault();
+    console.log("form submitted");
+    Axios.post($(this).attr('action'),{
+        name:$("#name").val(),
+        email:$("#reg-email").val(),
+        dob:$("#dob").val(),
+        password:$("#reg-password").val(),
+        password_confirmation:$("#password_confirmation").val()
+
+    }).then(function(response) {
+        console.log(response.StatusCode);
+        window.location.href="/home";
+    }).catch(function(error) {
+        
+        if(!isEmpty(error.response.data.errors.email)){
+            console.log(error.response.data.errors.email);
+        }
+        else{
+            $("#email-error-list").html("");
+        }
+        if(!isEmpty(error.response.data.errors.password)){
+        
+         }else{
+            $("#password-error-list").html("");
+        }
+
+        // console.log([0]);
+        
+    });
+});

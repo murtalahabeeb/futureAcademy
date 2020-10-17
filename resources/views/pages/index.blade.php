@@ -234,31 +234,31 @@
             </div>
 
             <div class="container">
-                <form  method="POST" action="{{ route('register') }}">
+                <form  method="POST" action="{{ route('register') }}" id="reg-form">
 
                     <div class="row">
                         <div class="col-lg-12  col-sm-12">
                             <label for="name">Full Name</label>
-                            <input type="text" name="name" placeholder="Full Name">
+                            <input type="text" name="name" placeholder="Full Name" id="name">
                         </div><br>
                         <div class="col-lg-12  col-sm-12">
                             <label for="Email">Email</label>
-                            <input type="email" name="email" placeholder="Email">
+                            <input type="email" name="email" placeholder="Email" id="reg-email">
                         </div><br>
                         <div class="col-lg-12  col-sm-12">
                             <label for="DOB">Date Of Birth</label>
-                            <input type="date" name="DOB" placeholder="Date Of Birth">
+                            <input type="date" name="dob" placeholder="Date Of Birth" id="dob">
                             <p id="age">members should not be more than 20 years</p>
                         </div><br>
                             
                         <div class="col-lg-12  col-sm-12">
                             <label for="Password">Password</label>
-                            <input type="password" name="password" placeholder="Password">
+                            <input type="password" name="password" placeholder="Password" id="reg-password">
                         </div>
                         <br>
                         <div class="col-lg-12  col-sm-12">
                             <label for="password_confirmation">Confirm Password</label>
-                            <input type="password" name="password_confirmation" placeholder="Confirm Password">
+                            <input type="password" name="password_confirmation" placeholder="Confirm Password" id="password_confirmation">
                         </div><br>
                         <div class="col-lg-12  col-sm-12 ">
                             <button type="submit" name="submit" class="submit">Enroll</button>
@@ -322,6 +322,14 @@
                         <ul id="password-error-list"></ul>
                     </div>
                     <br>
+                    <div class="form-check">
+                    <label class="form-check-label" for="remember">
+                        {{ __('Remember Me') }}
+                    </label>
+                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                        
+                    </div>
                     <div class="col-lg-12  col-sm-12 ">
                         <button type="submit" name="Submit" class="submit">Sign In</button>
                     </div><br>

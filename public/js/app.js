@@ -49754,7 +49754,8 @@ $("#login-form").on('submit', function (e) {
   console.log("form submitted");
   Axios.post($(this).attr('action'), {
     email: $("#email").val(),
-    password: $("#password").val()
+    password: $("#password").val(),
+    remember: $("#remember").isChecked()
   }).then(function (response) {
     console.log(response.StatusCode);
     window.location.href = "/home";
@@ -49776,6 +49777,31 @@ $("#login-form").on('submit', function (e) {
         $("#password-error-list").append("<li>" + element + "</li>");
       });
     } else {
+      $("#password-error-list").html("");
+    } // console.log([0]);
+
+  });
+});
+$("#reg-form").on('submit', function (e) {
+  e.preventDefault();
+  console.log("form submitted");
+  Axios.post($(this).attr('action'), {
+    name: $("#name").val(),
+    email: $("#reg-email").val(),
+    dob: $("#dob").val(),
+    password: $("#reg-password").val(),
+    password_confirmation: $("#password_confirmation").val()
+  }).then(function (response) {
+    console.log(response.StatusCode);
+    window.location.href = "/home";
+  })["catch"](function (error) {
+    if (!isEmpty(error.response.data.errors.email)) {
+      console.log(error.response.data.errors.email);
+    } else {
+      $("#email-error-list").html("");
+    }
+
+    if (!isEmpty(error.response.data.errors.password)) {} else {
       $("#password-error-list").html("");
     } // console.log([0]);
 
@@ -49937,6 +49963,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/profile.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/profile.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/style.scss":
 /*!***********************************!*\
   !*** ./resources/sass/style.scss ***!
@@ -49960,9 +49997,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/style.scss ./resources/sass/index.scss ./resources/sass/training.scss ./resources/sass/aboutus.scss ***!
-  \**********************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/style.scss ./resources/sass/index.scss ./resources/sass/training.scss ./resources/sass/aboutus.scss ./resources/sass/profile.scss ***!
+  \****************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49971,7 +50008,8 @@ __webpack_require__(/*! C:\Users\mosh\Desktop\futureAcademy\resources\sass\app.s
 __webpack_require__(/*! C:\Users\mosh\Desktop\futureAcademy\resources\sass\style.scss */"./resources/sass/style.scss");
 __webpack_require__(/*! C:\Users\mosh\Desktop\futureAcademy\resources\sass\index.scss */"./resources/sass/index.scss");
 __webpack_require__(/*! C:\Users\mosh\Desktop\futureAcademy\resources\sass\training.scss */"./resources/sass/training.scss");
-module.exports = __webpack_require__(/*! C:\Users\mosh\Desktop\futureAcademy\resources\sass\aboutus.scss */"./resources/sass/aboutus.scss");
+__webpack_require__(/*! C:\Users\mosh\Desktop\futureAcademy\resources\sass\aboutus.scss */"./resources/sass/aboutus.scss");
+module.exports = __webpack_require__(/*! C:\Users\mosh\Desktop\futureAcademy\resources\sass\profile.scss */"./resources/sass/profile.scss");
 
 
 /***/ })

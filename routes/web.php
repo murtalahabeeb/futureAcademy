@@ -18,6 +18,7 @@ use App\Http\Controllers\PagesController;
 Route::get('/',[PagesController::class, 'index']);
 Route::get('/training',[PagesController::class, 'training_session']);
 Route::get('/aboutus',[PagesController::class, 'aboutus']);
+
 Route::get('/profile',[PagesController::class, 'profile']);
 
 
