@@ -15,7 +15,7 @@
                         <div class="row">
                             <div class="col-lg-12 profile">
                                 <h3>Profile Settings</h3><br>
-                                <div class="container">
+                                <div class="container-fluid">
                                     <div class= "row">
                                         <div class="col-lg-12  col-sm-12">
                                             <label for="name">Full Name</label>
@@ -116,24 +116,75 @@
                     
                 </div>
                 <div class="col-lg-6 col-sm-6 g">
-                    <!-- <div class="container"> -->
+                    <div class="container">
                         <div class="row">
-                            <div class="col-lg-6 profile-img">
-                                <h3>Profile Image</h3>
-                                <div class="conatiner img-center">
-                                    <div class="img">
-                                    <!-- <img src="" alt=""> -->
+                            <div class="col-lg-12 ">
+                                <div class="profile-img">
+                                    <h3>Profile Image</h3>
+                                    <div class="conatiner img-center">
+                                        <div class="img">
+                                        <!-- <img src="" alt=""> -->
 
+                                        </div>
+                                        <button class="change-img">Change Image</button>
+                                        <p>JPEG or PNG is recommended</p>
                                     </div>
-                                    <button class="change-img">Change Image</button>
-                                    <p>JPEG or PNG is recommended</p>
                                 </div>
+                                
                                 
 
                             </div>
-                            <!-- <div class="col-lg-6 profile-img"></div> -->
+                            <div class="col-lg-12">
+                                <div class="contacts">
+                                
+                                    <div class="container">
+                                    <h3>Other Contacts</h3>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">@</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">@</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">@</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">@</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
                         </div>
-                    <!-- </div> -->
+                    </div>
                 </div>
             </div>
         </form>
